@@ -1,0 +1,78 @@
+[
+    {
+        "name": "DSD",
+        "type": "Service"
+    },
+    {
+        "name": "Register Indication",
+        "id": "0x38",
+        "type": "Message",
+        "since": "1.33",
+        "service": "DSD",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Switch Data Subscription",
+        "id": "0x4E",
+        "type": "Indication",
+        "since": "1.33",
+        "service": "DSD",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Current Data Subscription Info",
+        "id": "0x50",
+        "type": "Indication",
+        "since": "1.33",
+        "service": "DSD",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Get UI Info",
+        "id": "0x68",
+        "type": "Message",
+        "since": "1.33",
+        "service": "DSD",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Register UI Info Change",
+        "id": "0x69",
+        "type": "Message",
+        "since": "1.33",
+        "service": "DSD",
+        "vendor": "Apple"
+    },
+    {
+        "name": "UI Info",
+        "id": "0x6A",
+        "type": "Indication",
+        "since": "1.33",
+        "service": "DSD",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Enable 5G",
+        "id": "0xA5",
+        "type": "Indication",
+        "since": "1.33",
+        "service": "DSD",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Get Bandwidth Info",
+        "id": "0x5550",
+        "type": "Message",
+        "since": "1.33",
+        "service": "DSD",
+        "vendor": "Apple"
+    },
+    {
+        "name": "WirelessRadioManager Indication",
+        "id": "0x5551",
+        "type": "Indication",
+        "since": "1.33",
+        "service": "DSD",
+        "vendor": "Apple"
+    }
+]

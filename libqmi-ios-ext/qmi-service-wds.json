@@ -1,0 +1,174 @@
+[
+    {
+        "name": "WDS",
+        "type": "Service"
+    },
+    {
+        "name": "Read MIP Profile",
+        "id": "0x3E",
+        "type": "Message",
+        "since": "1.33",
+        "service": "WDS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Get Current Data System Status",
+        "id": "0x6B",
+        "type": "Message",
+        "since": "1.33",
+        "service": "WDS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "3GPP Parameters",
+        "id": "0xA5",
+        "type": "Indication",
+        "since": "1.33",
+        "service": "WDS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Update VoLTE Data Call Type",
+        "id": "0xB1",
+        "type": "Message",
+        "since": "1.33",
+        "service": "WDS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "LTE Attach Params",
+        "id": "0xC6",
+        "type": "Indication",
+        "since": "1.33",
+        "service": "WDS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Reset And Modify Profile Settings",
+        "id": "0xC7",
+        "type": "Message",
+        "since": "1.33",
+        "service": "WDS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Delete All Profiles",
+        "id": "0xCD",
+        "type": "Message",
+        "since": "1.33",
+        "service": "WDS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Delete All Profiles",
+        "id": "0xCD",
+        "type": "Indication",
+        "since": "1.33",
+        "service": "WDS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Shutdown ANBR Handle",
+        "id": "0xE6",
+        "type": "Message",
+        "since": "1.33",
+        "service": "WDS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Free PDU Session ID",
+        "id": "0x0108",
+        "type": "Message",
+        "since": "1.33",
+        "service": "WDS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Set ANBR Filter",
+        "id": "0x0128",
+        "type": "Message",
+        "since": "1.33",
+        "service": "WDS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Link Stats",
+        "id": "0x555B",
+        "type": "Message",
+        "since": "1.33",
+        "service": "WDS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Enable High Priority Data",
+        "id": "0x555D",
+        "type": "Message",
+        "since": "1.33",
+        "service": "WDS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Drop IP Packets",
+        "id": "0x555E",
+        "type": "Message",
+        "since": "1.33",
+        "service": "WDS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Dad Complete",
+        "id": "0x5561",
+        "type": "Indication",
+        "since": "1.33",
+        "service": "WDS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "FD Backoff Time",
+        "id": "0x5563",
+        "type": "Indication",
+        "since": "1.33",
+        "service": "WDS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Push VOIP App Info",
+        "id": "0x5565",
+        "type": "Message",
+        "since": "1.33",
+        "service": "WDS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Update Cellular Data Status Info",
+        "id": "0x5566",
+        "type": "Message",
+        "since": "1.33",
+        "service": "WDS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Notify Cellular Data Switching Allowed",
+        "id": "0x5568",
+        "type": "Message",
+        "since": "1.33",
+        "service": "WDS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Update Current Data SIM",
+        "id": "0x5569",
+        "type": "Message",
+        "since": "1.33",
+        "service": "WDS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Notify BB of Data Service",
+        "id": "0x5570",
+        "type": "Message",
+        "since": "1.33",
+        "service": "WDS",
+        "vendor": "Apple"
+    }
+]

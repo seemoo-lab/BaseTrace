@@ -1,0 +1,30 @@
+[
+    {
+        "name": "CAT",
+        "type": "Service"
+    },
+    {
+        "name": "Set Event Report Register",
+        "id": "0x01",
+        "type": "Message",
+        "since": "1.33",
+        "service": "CAT",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Set Event Report Indication / Setup Call",
+        "id": "0x01",
+        "type": "Indication",
+        "since": "1.33",
+        "service": "CAT",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Send Decoded Envelope",
+        "id": "0x25",
+        "type": "Message",
+        "since": "1.33",
+        "service": "CAT",
+        "vendor": "Apple"
+    }
+]

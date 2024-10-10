@@ -1,0 +1,16 @@
+{
+  "name": "iphone-qmi-wireshark-agent",
+  "version": "1.0.0",
+  "description": "Frida agent written in TypeScript",
+  "private": true,
+  "main": "agent/index.ts",
+  "scripts": {
+    "build": "frida-compile agent/index.ts -o _agent.js -c",
+    "watch": "frida-compile agent/index.ts -o _agent.js -w"
+  },
+  "devDependencies": {
+    "@types/frida-gum": "^18.7.1",
+    "@types/node": "~20.9.5",
+    "frida-compile": "^10.2.5"
+  }
+}

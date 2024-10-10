@@ -1,0 +1,30 @@
+[
+    {
+        "name": "MFSE",
+        "type": "Service"
+    },
+    {
+        "name": "Sync Event",
+        "id": "0x0800",
+        "type": "Indication",
+        "since": "1.33",
+        "service": "MFSE",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Enable Sync Event",
+        "id": "0x0800",
+        "type": "Message",
+        "since": "1.33",
+        "service": "MFSE",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Sync No Wait",
+        "id": "0x20",
+        "type": "Message",
+        "since": "1.33",
+        "service": "MFSE",
+        "vendor": "Apple"
+    }
+]

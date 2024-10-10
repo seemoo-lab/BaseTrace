@@ -1,0 +1,14 @@
+[
+    {
+        "name": "MAVIMS",
+        "type": "Service"
+    },
+    {
+        "name": "Send Sip Packet Info",
+        "id": "0x1",
+        "type": "Message",
+        "since": "1.33",
+        "service": "MAVIMS",
+        "vendor": "Apple"
+    }
+]

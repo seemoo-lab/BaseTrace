@@ -1,0 +1,38 @@
+[
+    {
+        "name": "WDA",
+        "type": "Service"
+    },
+    {
+        "name": "Set QMAP Settings",
+        "id": "0x2B",
+        "type": "Message",
+        "since": "1.33",
+        "service": "WDA",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Get QMAP Settings",
+        "id": "0x2C",
+        "type": "Message",
+        "since": "1.33",
+        "service": "WDA",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Set Power Save Config",
+        "id": "0x2D",
+        "type": "Message",
+        "since": "1.33",
+        "service": "WDA",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Set Capability",
+        "id": "0x30",
+        "type": "Message",
+        "since": "1.33",
+        "service": "WDA",
+        "vendor": "Apple"
+    }
+]

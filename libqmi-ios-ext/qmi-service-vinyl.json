@@ -1,0 +1,54 @@
+[
+    {
+        "name": "VINYL",
+        "type": "Service"
+    },
+    {
+        "name": "Vinyl Message",
+        "id": "0x1000",
+        "type": "Message",
+        "since": "1.33",
+        "service": "VINYL",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Vinyl Info",
+        "id": "0x1001",
+        "type": "Indication",
+        "since": "1.33",
+        "service": "VINYL",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Tape Message",
+        "id": "0x1002",
+        "type": "Message",
+        "since": "1.33",
+        "service": "VINYL",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Tape Info",
+        "id": "0x1003",
+        "type": "Indication",
+        "since": "1.33",
+        "service": "VINYL",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Tape Get EID Message",
+        "id": "0x1004",
+        "type": "Message",
+        "since": "1.33",
+        "service": "VINYL",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Tape Get Device Capabilities Message",
+        "id": "0x1005",
+        "type": "Message",
+        "since": "1.33",
+        "service": "VINYL",
+        "vendor": "Apple"
+    }
+]

@@ -1,0 +1,182 @@
+[
+    {
+        "name": "MS",
+        "type": "Service"
+    },
+    {
+        "name": "Service Bind",
+        "id": "0x3E",
+        "type": "Message",
+        "since": "1.33",
+        "service": "MS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Service Initialize",
+        "id": "0x3F",
+        "type": "Message",
+        "since": "1.33",
+        "service": "MS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Service Initialize",
+        "id": "0x3F",
+        "type": "Indication",
+        "since": "1.33",
+        "service": "MS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Service Uninitialize",
+        "id": "0x40",
+        "type": "Indication",
+        "since": "1.33",
+        "service": "MS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Session Initialize",
+        "id": "0x41",
+        "type": "Message",
+        "since": "1.33",
+        "service": "MS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Session Initialize",
+        "id": "0x41",
+        "type": "Indication",
+        "since": "1.33",
+        "service": "MS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Session Uninitialize",
+        "id": "0x42",
+        "type": "Message",
+        "since": "1.33",
+        "service": "MS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Session Uninitialize",
+        "id": "0x42",
+        "type": "Indication",
+        "since": "1.33",
+        "service": "MS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Session Configure",
+        "id": "0x43",
+        "type": "Message",
+        "since": "1.33",
+        "service": "MS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Session Configure",
+        "id": "0x43",
+        "type": "Indication",
+        "since": "1.33",
+        "service": "MS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Session Set Stream Direction",
+        "id": "0x44",
+        "type": "Message",
+        "since": "1.33",
+        "service": "MS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Session Set Stream Direction",
+        "id": "0x44",
+        "type": "Indication",
+        "since": "1.33",
+        "service": "MS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Session Configure RTCP Reports",
+        "id": "0x47",
+        "type": "Message",
+        "since": "1.33",
+        "service": "MS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Session Configure Link Monitor",
+        "id": "0x48",
+        "type": "Message",
+        "since": "1.33",
+        "service": "MS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Session Inactivity",
+        "id": "0x48",
+        "type": "Indication",
+        "since": "1.33",
+        "service": "MS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Session Subscribe Notifications",
+        "id": "0x48",
+        "type": "Message",
+        "since": "1.33",
+        "service": "MS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "ServiceSubscribeNotifications",
+        "id": "0x49",
+        "type": "Message",
+        "since": "1.33",
+        "service": "MS",
+        "vendor": "Apple (Ghidra)"
+    },
+    {
+        "name": "Service Error",
+        "id": "0x4A",
+        "type": "Indication",
+        "since": "1.33",
+        "service": "MS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Service RCTP Reports",
+        "id": "0x4B",
+        "type": "Indication",
+        "since": "1.33",
+        "service": "MS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Sessions Send DTMF",
+        "id": "0x4C",
+        "type": "Message",
+        "since": "1.33",
+        "service": "MS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Service Uninitialize All Sessions",
+        "id": "0x4F",
+        "type": "Message",
+        "since": "1.33",
+        "service": "MS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Service Uninitialize All Sessions",
+        "id": "0x4F",
+        "type": "Indication",
+        "since": "1.33",
+        "service": "MS",
+        "vendor": "Apple"
+    }
+]

@@ -1,0 +1,70 @@
+[
+    {
+        "name": "UIM",
+        "type": "Service"
+    },
+    {
+        "name": "Write Transparent",
+        "id": "0x22",
+        "type": "Message",
+        "since": "1.33",
+        "service": "UIM",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Authenticate",
+        "id": "0x34",
+        "type": "Message",
+        "since": "1.33",
+        "service": "UIM",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Send APDU",
+        "id": "0x3B",
+        "type": "Message",
+        "since": "1.33",
+        "service": "UIM",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Logical Channel",
+        "id": "0x3F",
+        "type": "Message",
+        "since": "1.33",
+        "service": "UIM",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Card Prov Status Change",
+        "id": "0x5556",
+        "type": "Message",
+        "since": "1.33",
+        "service": "UIM",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Card Prov Status Change",
+        "id": "0x5556",
+        "type": "Indication",
+        "since": "1.33",
+        "service": "UIM",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Select UIM For Single Sub Config",
+        "id": "0x5557",
+        "type": "Message",
+        "since": "1.33",
+        "service": "UIM",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Card Debounce Status",
+        "id": "0x5558",
+        "type": "Indication",
+        "since": "1.33",
+        "service": "UIM",
+        "vendor": "Apple"
+    }
+]

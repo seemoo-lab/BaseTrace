@@ -1,0 +1,86 @@
+[
+    {
+        "name": "PBM",
+        "type": "Service"
+    },
+    {
+        "name": "Write Entry",
+        "id": "0x05",
+        "type": "Message",
+        "since": "1.33",
+        "service": "PBM",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Record Update",
+        "id": "0x09",
+        "type": "Indication",
+        "since": "1.33",
+        "service": "PBM",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Refresh",
+        "id": "0x0A",
+        "type": "Indication",
+        "since": "1.33",
+        "service": "PBM",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Ready",
+        "id": "0x0B",
+        "type": "Indication",
+        "since": "1.33",
+        "service": "PBM",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Emergency List",
+        "id": "0x0C",
+        "type": "Indication",
+        "since": "1.33",
+        "service": "PBM",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Phonebook Init Done",
+        "id": "0x0D",
+        "type": "Indication",
+        "since": "1.33",
+        "service": "PBM",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Get PB State",
+        "id": "0x11",
+        "type": "Message",
+        "since": "1.33",
+        "service": "PBM",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Bind Subscription",
+        "id": "0x1A",
+        "type": "Message",
+        "since": "1.33",
+        "service": "PBM",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Read Record Unencoded",
+        "id": "0x22",
+        "type": "Message",
+        "since": "1.33",
+        "service": "PBM",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Read Record",
+        "id": "0x22",
+        "type": "Indication",
+        "since": "1.33",
+        "service": "PBM",
+        "vendor": "Apple"
+    }
+]

@@ -1,0 +1,206 @@
+[
+    {
+        "name": "COEX",
+        "type": "Service"
+    },
+    {
+        "name": "WWAN State",
+        "id": "0x21",
+        "type": "Indication",
+        "since": "1.33",
+        "service": "COEX",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Get WWAN State",
+        "id": "0x22",
+        "type": "Message",
+        "since": "1.33",
+        "service": "COEX",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Set WLAN State",
+        "id": "0x23",
+        "type": "Message",
+        "since": "1.33",
+        "service": "COEX",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Get WLAN Scan State",
+        "id": "0x24",
+        "type": "Message",
+        "since": "1.33",
+        "service": "COEX",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Get WLAN Connection State",
+        "id": "0x25",
+        "type": "Message",
+        "since": "1.33",
+        "service": "COEX",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Set Policy",
+        "id": "0x26",
+        "type": "Message",
+        "since": "1.33",
+        "service": "COEX",
+        "vendor": "Apple"
+    },
+    {
+        "name": "LER Start",
+        "id": "0x28",
+        "type": "Message",
+        "since": "1.33",
+        "service": "COEX",
+        "vendor": "Apple"
+    },
+    {
+        "name": "LER Stats",
+        "id": "0x29",
+        "type": "Indication",
+        "since": "1.33",
+        "service": "COEX",
+        "vendor": "Apple"
+    },
+    {
+        "name": "LER Start",
+        "id": "0x2A",
+        "type": "Message",
+        "since": "1.33",
+        "service": "COEX",
+        "vendor": "Apple"
+    },
+    {
+        "name": "SINR Start",
+        "id": "0x2B",
+        "type": "Message",
+        "since": "1.33",
+        "service": "COEX",
+        "vendor": "Apple"
+    },
+    {
+        "name": "SINR Read",
+        "id": "0x2C",
+        "type": "Message",
+        "since": "1.33",
+        "service": "COEX",
+        "vendor": "Apple"
+    },
+    {
+        "name": "SINR Stop",
+        "id": "0x2D",
+        "type": "Message",
+        "since": "1.33",
+        "service": "COEX",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Set Band Filter Info",
+        "id": "0x2E",
+        "type": "Message",
+        "since": "1.33",
+        "service": "COEX",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Condition Fail",
+        "id": "0x30",
+        "type": "Indication",
+        "since": "1.33",
+        "service": "COEX",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Condition Success",
+        "id": "0x31",
+        "type": "Indication",
+        "since": "1.33",
+        "service": "COEX",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Set Scan Freq Band Filter",
+        "id": "0x3D",
+        "type": "Message",
+        "since": "1.33",
+        "service": "COEX",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Get Scan Freq Band Filter",
+        "id": "0x3E",
+        "type": "Message",
+        "since": "1.33",
+        "service": "COEX",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Config Time Share Request",
+        "id": "0x48",
+        "type": "Message",
+        "since": "1.33",
+        "service": "COEX",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Set CC1 Request",
+        "id": "0x4B",
+        "type": "Message",
+        "since": "1.33",
+        "service": "COEX",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Set Ant Blocking Request",
+        "id": "0x4C",
+        "type": "Message",
+        "since": "1.33",
+        "service": "COEX",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Set WCI2 Tx Ant Map",
+        "id": "0x4D",
+        "type": "Message",
+        "since": "1.33",
+        "service": "COEX",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Set CC2 Request",
+        "id": "0x4E",
+        "type": "Message",
+        "since": "1.33",
+        "service": "COEX",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Set Laa Params Request",
+        "id": "0x4F",
+        "type": "Message",
+        "since": "1.33",
+        "service": "COEX",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Set Gnss Band Id",
+        "id": "0x51",
+        "type": "Message",
+        "since": "1.33",
+        "service": "COEX",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Send Transparent Message",
+        "id": "0x55",
+        "type": "Message",
+        "since": "1.33",
+        "service": "COEX",
+        "vendor": "Apple"
+    }
+]

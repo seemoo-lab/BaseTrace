@@ -1,0 +1,309 @@
+[
+    {
+        "name": "RTP",
+        "type": "Service"
+    },
+    {
+        "name": "Session Initialize",
+        "id": "0x22",
+        "type": "Message",
+        "since": "1.33",
+        "service": "RTP",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Session Initialize",
+        "id": "0x22",
+        "type": "Indication",
+        "since": "1.33",
+        "service": "RTP",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Session Uninitialize",
+        "id": "0x23",
+        "type": "Message",
+        "since": "1.33",
+        "service": "RTP",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Session Uninitialize",
+        "id": "0x23",
+        "type": "Indication",
+        "since": "1.33",
+        "service": "RTP",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Session Uninitialize",
+        "id": "0x24",
+        "type": "Message",
+        "since": "1.33",
+        "service": "RTP",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Session Uninitialize",
+        "id": "0x24",
+        "type": "Indication",
+        "since": "1.33",
+        "service": "RTP",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Session Start",
+        "id": "0x25",
+        "type": "Message",
+        "since": "1.33",
+        "service": "RTP",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Session Start",
+        "id": "0x25",
+        "type": "Indication",
+        "since": "1.33",
+        "service": "RTP",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Session Start",
+        "id": "0x26",
+        "type": "Message",
+        "since": "1.33",
+        "service": "RTP",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Session Start",
+        "id": "0x26",
+        "type": "Indication",
+        "since": "1.33",
+        "service": "RTP",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Session Pause",
+        "id": "0x27",
+        "type": "Message",
+        "since": "1.33",
+        "service": "RTP",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Session Resume",
+        "id": "0x27",
+        "type": "Message",
+        "since": "1.33",
+        "service": "RTP",
+        "vendor": "Apple"
+    },
+    {
+        "name": "SessionResume",
+        "id": "0x28",
+        "type": "Message",
+        "service": "RTP",
+        "vendor": "Apple (Ghidra)"
+    },
+    {
+        "name": "Session Configure RTCP",
+        "id": "0x29",
+        "type": "Message",
+        "since": "1.33",
+        "service": "RTP",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Session Configure RTCP",
+        "id": "0x29",
+        "type": "Indication",
+        "since": "1.33",
+        "service": "RTP",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Session Configure RTP Link Monitor",
+        "id": "0x2A",
+        "type": "Message",
+        "since": "1.33",
+        "service": "RTP",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Session Configure RTP Link Monitor",
+        "id": "0x2A",
+        "type": "Indication",
+        "since": "1.33",
+        "service": "RTP",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Session Configure RTCP Link Monitor",
+        "id": "0x2B",
+        "type": "Message",
+        "since": "1.33",
+        "service": "RTP",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Session Configure RTCP Link Monitor",
+        "id": "0x2B",
+        "type": "Indication",
+        "since": "1.33",
+        "service": "RTP",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Session Send DTMF",
+        "id": "0x2C",
+        "type": "Message",
+        "since": "1.33",
+        "service": "RTP",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Register Services",
+        "id": "0x30",
+        "type": "Message",
+        "since": "1.33",
+        "service": "RTP",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Session Get Status",
+        "id": "0x31",
+        "type": "Indication",
+        "since": "1.33",
+        "service": "RTP",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Session Error",
+        "id": "0x32",
+        "type": "Indication",
+        "since": "1.33",
+        "service": "RTP",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Send Audio Call Event",
+        "id": "0x33",
+        "type": "Message",
+        "since": "1.33",
+        "service": "RTP",
+        "vendor": "Apple"
+    },
+    {
+        "name": "RTCP Reports",
+        "id": "0x33",
+        "type": "Indication",
+        "since": "1.33",
+        "service": "RTP",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Register Audio Codec Change CB",
+        "id": "0x33",
+        "type": "Message",
+        "since": "1.33",
+        "service": "RTP",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Uninitialize All Sessions",
+        "id": "0x3D",
+        "type": "Message",
+        "since": "1.33",
+        "service": "RTP",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Uninitialize All Sessions",
+        "id": "0x3D",
+        "type": "Indication",
+        "since": "1.33",
+        "service": "RTP",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Service Bind",
+        "id": "0x3E",
+        "type": "Message",
+        "since": "1.33",
+        "service": "RTP",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Service Initialize",
+        "id": "0x3E",
+        "type": "Message",
+        "since": "1.33",
+        "service": "RTP",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Session Initialize",
+        "id": "0x41",
+        "type": "Message",
+        "since": "1.33",
+        "service": "RTP",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Session Uninitialize",
+        "id": "0x42",
+        "type": "Message",
+        "since": "1.33",
+        "service": "RTP",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Session Set Stream Direction",
+        "id": "0x44",
+        "type": "Message",
+        "since": "1.33",
+        "service": "RTP",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Configure RTCP Reports",
+        "id": "0x47",
+        "type": "Message",
+        "since": "1.33",
+        "service": "RTP",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Configure RTP / RTCP Link Monitor",
+        "id": "0x48",
+        "type": "Message",
+        "since": "1.33",
+        "service": "RTP",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Subscribe Notifications",
+        "id": "0x49",
+        "type": "Message",
+        "since": "1.33",
+        "service": "RTP",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Send DTMF",
+        "id": "0x4C",
+        "type": "Message",
+        "since": "1.33",
+        "service": "RTP",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Uninitialize All Sessions",
+        "id": "0x4F",
+        "type": "Message",
+        "since": "1.33",
+        "service": "RTP",
+        "vendor": "Apple"
+    }
+]

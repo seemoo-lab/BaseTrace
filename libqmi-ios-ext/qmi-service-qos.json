@@ -1,0 +1,70 @@
+[
+    {
+        "name": "QOS",
+        "type": "Service"
+    },
+    {
+        "name": "Set Event Report",
+        "id": "0x01",
+        "type": "Message",
+        "since": "1.33",
+        "service": "QOS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Event Report",
+        "id": "0x01",
+        "type": "Indication",
+        "since": "1.33",
+        "service": "QOS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Request QoS",
+        "id": "0x20",
+        "type": "Message",
+        "since": "1.33",
+        "service": "QOS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Release QoS",
+        "id": "0x21",
+        "type": "Message",
+        "since": "1.33",
+        "service": "QOS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Bind Data Port",
+        "id": "0x2B",
+        "type": "Indication",
+        "since": "1.33",
+        "service": "QOS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Indication Register",
+        "id": "0x2F",
+        "type": "Message",
+        "since": "1.33",
+        "service": "QOS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Global QoS Flow",
+        "id": "0x31",
+        "type": "Indication",
+        "since": "1.33",
+        "service": "QOS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Get QoS Info",
+        "id": "0x33",
+        "type": "Message",
+        "since": "1.33",
+        "service": "QOS",
+        "vendor": "Apple"
+    }
+]

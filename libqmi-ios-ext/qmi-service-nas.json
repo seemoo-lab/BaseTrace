@@ -1,0 +1,358 @@
+[
+    {
+        "name": "NAS",
+        "type": "Service"
+    },
+    {
+        "name": "System Info (?)",
+        "id": "0x34",
+        "type": "Indication",
+        "since": "1.33",
+        "service": "NAS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Get PLMN Mode Bit",
+        "id": "0x3B",
+        "type": "Message",
+        "since": "1.33",
+        "service": "NAS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "PLMN Mode Bit",
+        "id": "0x3C",
+        "type": "Indication",
+        "since": "1.33",
+        "service": "NAS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Bind Subscription",
+        "id": "0x45",
+        "type": "Message",
+        "since": "1.33",
+        "service": "NAS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Subscription Info",
+        "id": "0x48",
+        "type": "Indication",
+        "since": "1.33",
+        "service": "NAS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Current PLMN Name",
+        "id": "0x61",
+        "type": "Indication",
+        "since": "1.33",
+        "service": "NAS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Get eMBMS Status",
+        "id": "0x63",
+        "type": "Indication",
+        "since": "1.33",
+        "service": "NAS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "eMBMS Status",
+        "id": "0x64",
+        "type": "Indication",
+        "since": "1.33",
+        "service": "NAS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Config Signal Info 2",
+        "id": "0x6C",
+        "type": "Message",
+        "since": "1.33",
+        "service": "NAS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Update IMS Status",
+        "id": "0x72",
+        "type": "Message",
+        "since": "1.33",
+        "service": "NAS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Access Barring Handler",
+        "id": "0x72",
+        "type": "Indication",
+        "since": "1.33",
+        "service": "NAS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Network Registration (IMS Preference Update)",
+        "id": "0x74",
+        "type": "Indication",
+        "since": "1.33",
+        "service": "NAS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Enhanced 911 state ready",
+        "id": "0x7B",
+        "type": "Indication",
+        "since": "1.33",
+        "service": "NAS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Get Subscription Info",
+        "id": "0x7C",
+        "type": "Message",
+        "since": "1.33",
+        "service": "NAS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Config eMBMS",
+        "id": "0x81",
+        "type": "Message",
+        "since": "1.33",
+        "service": "NAS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Network List (Incremental Scan)",
+        "id": "0x85",
+        "type": "Indication",
+        "since": "1.33",
+        "service": "NAS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Perform Incremental Network Scan",
+        "id": "0x85",
+        "type": "Message",
+        "since": "1.33",
+        "service": "NAS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Subscription Change",
+        "id": "0x86",
+        "type": "Indication",
+        "since": "1.33",
+        "service": "NAS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "SSAC Info",
+        "id": "0x90",
+        "type": "Indication",
+        "since": "1.33",
+        "service": "NAS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Get SSAC Info",
+        "id": "0x91",
+        "type": "Message",
+        "since": "1.33",
+        "service": "NAS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "T3402 Timer Changed",
+        "id": "0x93",
+        "type": "Indication",
+        "since": "1.33",
+        "service": "NAS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Get ACB Info",
+        "id": "0x94",
+        "type": "Message",
+        "since": "1.33",
+        "service": "NAS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "ACB Info",
+        "id": "0x94",
+        "type": "Indication",
+        "since": "1.33",
+        "service": "NAS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Set Geo MCCs",
+        "id": "0x99",
+        "type": "Message",
+        "since": "1.33",
+        "service": "NAS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Call State Notification",
+        "id": "0xA1",
+        "type": "Message",
+        "since": "1.33",
+        "service": "NAS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "MM Tel Response (IP Telephony)",
+        "id": "0xE4",
+        "type": "Indication",
+        "since": "1.33",
+        "service": "NAS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "UAC Alleviation (IP Telephony)",
+        "id": "0xE5",
+        "type": "Indication",
+        "since": "1.33",
+        "service": "NAS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Set IMS Proc Type (IP Telephony)",
+        "id": "0xE6",
+        "type": "Message",
+        "since": "1.33",
+        "service": "NAS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Disable ICCID",
+        "id": "0xEB",
+        "type": "Message",
+        "since": "1.33",
+        "service": "NAS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Get NR Disable Status",
+        "id": "0x0110",
+        "type": "Message",
+        "since": "1.33",
+        "service": "NAS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "NR Disable Status Changed",
+        "id": "0x0111",
+        "type": "Indication",
+        "since": "1.33",
+        "service": "NAS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Get Enhanced 911 Sub",
+        "id": "0x1002",
+        "type": "Message",
+        "since": "1.33",
+        "service": "NAS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Get Cell Info",
+        "id": "0x5556",
+        "type": "Message",
+        "since": "1.33",
+        "service": "NAS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Cell Info",
+        "id": "0x5556",
+        "type": "Indication",
+        "since": "1.33",
+        "service": "NAS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Send WiFi Network Info",
+        "id": "0x5562",
+        "type": "Message",
+        "since": "1.33",
+        "service": "NAS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Registration Hints",
+        "id": "0x5557",
+        "type": "Message",
+        "since": "1.33",
+        "service": "NAS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Set Frequency Report Mode",
+        "id": "0x555B",
+        "type": "Message",
+        "since": "1.33",
+        "service": "NAS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Frequency Report",
+        "id": "0x555B",
+        "type": "Indication",
+        "since": "1.33",
+        "service": "NAS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Get Provisioning Mode",
+        "id": "0x555E",
+        "type": "Message",
+        "since": "1.33",
+        "service": "NAS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "LAPS Fetch",
+        "id": "0x555F",
+        "type": "Indication",
+        "since": "1.33",
+        "service": "NAS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "PLMN Mode",
+        "id": "0x5560",
+        "type": "Indication",
+        "since": "1.33",
+        "service": "NAS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Trigger Closed Subscriber Group",
+        "id": "0x5561",
+        "type": "Message",
+        "since": "1.33",
+        "service": "NAS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Call / Lock / AV State",
+        "id": "0x5568",
+        "type": "Message",
+        "since": "1.33",
+        "service": "NAS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Geo PLMN",
+        "id": "0x5572",
+        "type": "Indication",
+        "since": "1.33",
+        "service": "NAS",
+        "vendor": "Apple"
+    }
+]

@@ -1,0 +1,334 @@
+[
+    {
+        "name": "PDS",
+        "type": "Service"
+    },
+    {
+        "name": "Set NMEA Config",
+        "id": "0x27",
+        "type": "Message",
+        "since": "1.33",
+        "service": "PDS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Set Default Tracking Session",
+        "id": "0x2A",
+        "type": "Message",
+        "since": "1.33",
+        "service": "PDS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Force XTRA Download",
+        "id": "0x2D",
+        "type": "Message",
+        "since": "1.33",
+        "service": "PDS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Set Auto Tracking State",
+        "id": "0x31",
+        "type": "Message",
+        "since": "1.33",
+        "service": "PDS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Reset GPS Service State",
+        "id": "0x34",
+        "type": "Message",
+        "since": "1.33",
+        "service": "PDS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Inject XTRA Data",
+        "id": "0x37",
+        "type": "Message",
+        "since": "1.33",
+        "service": "PDS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Inject Position Data",
+        "id": "0x38",
+        "type": "Message",
+        "since": "1.33",
+        "service": "PDS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "NI Response",
+        "id": "0x3C",
+        "type": "Message",
+        "since": "1.33",
+        "service": "PDS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Inject Absolute Time Reference",
+        "id": "0x3D",
+        "type": "Message",
+        "since": "1.33",
+        "service": "PDS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Set DPO Config",
+        "id": "0x40",
+        "type": "Message",
+        "since": "1.33",
+        "service": "PDS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Force Receiver Off",
+        "id": "0x49",
+        "type": "Message",
+        "since": "1.33",
+        "service": "PDS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Inject Time Sync Data",
+        "id": "0x53",
+        "type": "Message",
+        "since": "1.33",
+        "service": "PDS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Set Navigation Config",
+        "id": "0x57",
+        "type": "Message",
+        "since": "1.33",
+        "service": "PDS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Set Cell Database Control Mask",
+        "id": "0x5F",
+        "type": "Message",
+        "since": "1.33",
+        "service": "PDS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Set Inject Motion Data",
+        "id": "0x61",
+        "type": "Message",
+        "since": "1.33",
+        "service": "PDS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "L1 Rf Config",
+        "id": "0x65",
+        "type": "Message",
+        "since": "1.33",
+        "service": "PDS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Inject Direction Of Travel",
+        "id": "0x66",
+        "type": "Message",
+        "since": "1.33",
+        "service": "PDS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Inject Supl Cert",
+        "id": "0x67",
+        "type": "Message",
+        "since": "1.33",
+        "service": "PDS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Delete Supl Cert",
+        "id": "0x68",
+        "type": "Message",
+        "since": "1.33",
+        "service": "PDS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Set User Plane Position Modes",
+        "id": "0x74",
+        "type": "Message",
+        "since": "1.33",
+        "service": "PDS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Send APN Config",
+        "id": "0x78",
+        "type": "Message",
+        "since": "1.33",
+        "service": "PDS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Get LPP Config",
+        "id": "0x7D",
+        "type": "Message",
+        "since": "1.33",
+        "service": "PDS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Set LPP Config",
+        "id": "0x7E",
+        "type": "Message",
+        "since": "1.33",
+        "service": "PDS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Supl UDP Port Config",
+        "id": "0x83",
+        "type": "Message",
+        "since": "1.33",
+        "service": "PDS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Cancel Ongoing Session",
+        "id": "0x84",
+        "type": "Message",
+        "since": "1.33",
+        "service": "PDS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Set Time Transfer Config",
+        "id": "0x85",
+        "type": "Message",
+        "since": "1.33",
+        "service": "PDS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Send Client Pulse Time",
+        "id": "0x87",
+        "type": "Message",
+        "since": "1.33",
+        "service": "PDS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Set Emergency Support Config",
+        "id": "0x8A",
+        "type": "Message",
+        "since": "1.33",
+        "service": "PDS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Set Black List",
+        "id": "0x8B",
+        "type": "Message",
+        "since": "1.33",
+        "service": "PDS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Inject Speed Data",
+        "id": "0x8E",
+        "type": "Message",
+        "since": "1.33",
+        "service": "PDS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Set OTDOA Config",
+        "id": "0x93",
+        "type": "Message",
+        "since": "1.33",
+        "service": "PDS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Set Signal Environment Config",
+        "id": "0x96",
+        "type": "Message",
+        "since": "1.33",
+        "service": "PDS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Inject Speed Inequality Constraint",
+        "id": "0x97",
+        "type": "Message",
+        "since": "1.33",
+        "service": "PDS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Set XO Calibration Config",
+        "id": "0x98",
+        "type": "Message",
+        "since": "1.33",
+        "service": "PDS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Set Spoofing Report Config",
+        "id": "0x9F",
+        "type": "Message",
+        "since": "1.33",
+        "service": "PDS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Set GNSS Engine Monitor Config",
+        "id": "0xA1",
+        "type": "Message",
+        "since": "1.33",
+        "service": "PDS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Set GNSS Reporting Config",
+        "id": "0xA3",
+        "type": "Message",
+        "since": "1.33",
+        "service": "PDS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Set Emergency Mode Lockout Config",
+        "id": "0xA9",
+        "type": "Message",
+        "since": "1.33",
+        "service": "PDS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Multiband Config",
+        "id": "0xAD",
+        "type": "Message",
+        "since": "1.33",
+        "service": "PDS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Register PDS Indications",
+        "id": "0xB1",
+        "type": "Indication",
+        "since": "1.33",
+        "service": "PDS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "SV Use In Fix Report / Set PDO Status Report",
+        "id": "0x5557",
+        "type": "Message",
+        "since": "1.33",
+        "service": "PDS",
+        "vendor": "Apple"
+    }
+]

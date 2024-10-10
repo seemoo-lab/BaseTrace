@@ -1,0 +1,494 @@
+[
+    {
+        "name": "BSP",
+        "type": "Service"
+    },
+    {
+        "name": "Event Report",
+        "id": "0x01",
+        "type": "Indication",
+        "since": "1.33",
+        "service": "BSP",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Set Field Test Config",
+        "id": "0x10",
+        "type": "Message",
+        "since": "1.33",
+        "service": "BSP",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Get Field Test Config",
+        "id": "0x11",
+        "type": "Message",
+        "since": "1.33",
+        "service": "BSP",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Hand Detection State",
+        "id": "0x14",
+        "type": "Message",
+        "since": "1.33",
+        "service": "BSP",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Send Accessory Info",
+        "id": "0x19",
+        "type": "Message",
+        "since": "1.33",
+        "service": "BSP",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Set Tx Antenna Port",
+        "id": "0x1A",
+        "type": "Message",
+        "since": "1.33",
+        "service": "BSP",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Get Tx Antenna Port",
+        "id": "0x1B",
+        "type": "Message",
+        "since": "1.33",
+        "service": "BSP",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Setting Legacy Tx MCC",
+        "id": "0x1C",
+        "type": "Message",
+        "since": "1.33",
+        "service": "BSP",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Setting STx MCC",
+        "id": "0x1D",
+        "type": "Message",
+        "since": "1.33",
+        "service": "BSP",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Register RF Self Test",
+        "id": "0x20",
+        "type": "Message",
+        "since": "1.33",
+        "service": "BSP",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Self Test",
+        "id": "0x21",
+        "type": "Indication",
+        "since": "1.33",
+        "service": "BSP",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Trigger RF Self Test",
+        "id": "0x22",
+        "type": "Message",
+        "since": "1.33",
+        "service": "BSP",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Get RFFE Scan Data",
+        "id": "0x23",
+        "type": "Message",
+        "since": "1.33",
+        "service": "BSP",
+        "vendor": "Apple"
+    },
+    {
+        "name": "AQM Report",
+        "id": "0x50",
+        "type": "Indication",
+        "since": "1.33",
+        "service": "BSP",
+        "vendor": "Apple"
+    },
+    {
+        "name": "DIAG Probe",
+        "id": "0x6604",
+        "type": "Message",
+        "since": "1.33",
+        "service": "BSP",
+        "vendor": "Apple"
+    },
+    {
+        "name": "DIAG Get Present ID",
+        "id": "0x660D",
+        "type": "Message",
+        "since": "1.33",
+        "service": "BSP",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Core Dump Set Enabled",
+        "id": "0x8800",
+        "type": "Message",
+        "since": "1.33",
+        "service": "BSP",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Get Reset Properties",
+        "id": "0x8801",
+        "type": "Message",
+        "since": "1.33",
+        "service": "BSP",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Release Reset Detect",
+        "id": "0x8802",
+        "type": "Message",
+        "since": "1.33",
+        "service": "BSP",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Send Segment With Data (File)",
+        "id": "0xA000",
+        "type": "Message",
+        "since": "1.33",
+        "service": "BSP",
+        "vendor": "Apple"
+    },
+    {
+        "name": "File Transfer Status",
+        "id": "0xA001",
+        "type": "Indication",
+        "since": "1.33",
+        "service": "BSP",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Get Nonce",
+        "id": "0xB000",
+        "type": "Message",
+        "since": "1.33",
+        "service": "BSP",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Get Chip ID Serial Number",
+        "id": "0xB001",
+        "type": "Message",
+        "since": "1.33",
+        "service": "BSP",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Send Activation Manifest",
+        "id": "0xB002",
+        "type": "Message",
+        "since": "1.33",
+        "service": "BSP",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Get Activation State",
+        "id": "0xB003",
+        "type": "Message",
+        "since": "1.33",
+        "service": "BSP",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Get Manifest Status",
+        "id": "0xB004",
+        "type": "Message",
+        "since": "1.33",
+        "service": "BSP",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Get Manifest",
+        "id": "0xB005",
+        "type": "Message",
+        "since": "1.33",
+        "service": "BSP",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Get PK Hash",
+        "id": "0xB008",
+        "type": "Message",
+        "since": "1.33",
+        "service": "BSP",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Activation Register",
+        "id": "0xB00C",
+        "type": "Message",
+        "since": "1.33",
+        "service": "BSP",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Activation Register",
+        "id": "0xB00C",
+        "type": "Indication",
+        "since": "1.33",
+        "service": "BSP",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Activation Set Ticket",
+        "id": "0xB00D",
+        "type": "Message",
+        "since": "1.33",
+        "service": "BSP",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Restore Carrier Name NVItems",
+        "id": "0xC001",
+        "type": "Message",
+        "since": "1.33",
+        "service": "BSP",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Erase Settings",
+        "id": "0xC002",
+        "type": "Message",
+        "since": "1.33",
+        "service": "BSP",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Get Wake Reason",
+        "id": "0xD008",
+        "type": "Message",
+        "since": "1.33",
+        "service": "BSP",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Core Dump Get Crash Reason",
+        "id": "0xD009",
+        "type": "Message",
+        "since": "1.33",
+        "service": "BSP",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Get IPC Logs",
+        "id": "0xD00A",
+        "type": "Message",
+        "since": "1.33",
+        "service": "BSP",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Log Collection Data",
+        "id": "0xD00D",
+        "type": "Indication",
+        "since": "1.33",
+        "service": "BSP",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Dump Logs",
+        "id": "0xD00E",
+        "type": "Indication",
+        "since": "1.33",
+        "service": "BSP",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Dump Logs",
+        "id": "0xD011",
+        "type": "Message",
+        "since": "1.33",
+        "service": "BSP",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Get IPA Logs",
+        "id": "0xD014",
+        "type": "Message",
+        "since": "1.33",
+        "service": "BSP",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Get Wake Reason",
+        "id": "0xD015",
+        "type": "Message",
+        "since": "1.33",
+        "service": "BSP",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Transaction Power Capping",
+        "id": "0xE002",
+        "type": "Message",
+        "since": "1.33",
+        "service": "BSP",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Transaction Power Limit",
+        "id": "0xE006",
+        "type": "Indication",
+        "since": "1.33",
+        "service": "BSP",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Get RF Calibration Status",
+        "id": "0xE009",
+        "type": "Message",
+        "since": "1.33",
+        "service": "BSP",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Send AP Status",
+        "id": "0xE00F",
+        "type": "Message",
+        "since": "1.33",
+        "service": "BSP",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Send Test Command",
+        "id": "0xE011",
+        "type": "Message",
+        "since": "1.33",
+        "service": "BSP",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Get CDRX Info",
+        "id": "0xE013",
+        "type": "Indication",
+        "since": "1.33",
+        "service": "BSP",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Get Baseband Status / Get CDRX Info",
+        "id": "0xE014",
+        "type": "Message",
+        "since": "1.33",
+        "service": "BSP",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Get Factory Calibration Status",
+        "id": "0xE018",
+        "type": "Message",
+        "since": "1.33",
+        "service": "BSP",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Transmit State Indication Configuration",
+        "id": "0xE01A",
+        "type": "Message",
+        "since": "1.33",
+        "service": "BSP",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Transmit State",
+        "id": "0xE01B",
+        "type": "Indication",
+        "since": "1.33",
+        "service": "BSP",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Send Bread Mode",
+        "id": "0xE01D",
+        "type": "Message",
+        "since": "1.33",
+        "service": "BSP",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Send Visit Info",
+        "id": "0xE01E",
+        "type": "Message",
+        "since": "1.33",
+        "service": "BSP",
+        "vendor": "Apple"
+    },
+    {
+        "name": "PPM Indication",
+        "id": "0xE021",
+        "type": "Indication",
+        "since": "1.33",
+        "service": "BSP",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Thermal Get Sensors",
+        "id": "0xE022",
+        "type": "Message",
+        "since": "1.33",
+        "service": "BSP",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Thermal Config Frequency",
+        "id": "0xE023",
+        "type": "Message",
+        "since": "1.33",
+        "service": "BSP",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Thermal Sensor Indication",
+        "id": "0xE024",
+        "type": "Indication",
+        "since": "1.33",
+        "service": "BSP",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Set Power Budget",
+        "id": "0xE025",
+        "type": "Message",
+        "since": "1.33",
+        "service": "BSP",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Get Current Power Budget",
+        "id": "0xE026",
+        "type": "Message",
+        "since": "1.33",
+        "service": "BSP",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Get Current Mitigation",
+        "id": "0xE026",
+        "type": "Message",
+        "since": "1.33",
+        "service": "BSP",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Sensor ID",
+        "id": "0x001E",
+        "type": "Message",
+        "since": "1.33",
+        "service": "BSP",
+        "vendor": "Apple"
+    }
+]

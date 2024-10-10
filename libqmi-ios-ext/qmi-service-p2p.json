@@ -1,0 +1,22 @@
+[
+    {
+        "name": "P2P",
+        "type": "Service"
+    },
+    {
+        "name": "Proximity Notification",
+        "id": "0x01",
+        "type": "Message",
+        "since": "1.33",
+        "service": "P2P",
+        "vendor": "Apple"
+    },
+    {
+        "name": "P2P Message",
+        "id": "0x02",
+        "type": "Indication",
+        "since": "1.33",
+        "service": "P2P",
+        "vendor": "Apple"
+    }
+]

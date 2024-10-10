@@ -1,0 +1,22 @@
+[
+    {
+        "name": "DMS",
+        "type": "Service"
+    },
+    {
+        "name": "Get Current PLR Info",
+        "id": "0x53",
+        "type": "Message",
+        "since": "1.33",
+        "service": "DMS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Bind Subscription",
+        "id": "0x54",
+        "type": "Message",
+        "since": "1.33",
+        "service": "DMS",
+        "vendor": "Apple"
+    }
+]

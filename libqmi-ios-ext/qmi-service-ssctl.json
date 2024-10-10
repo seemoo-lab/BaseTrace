@@ -1,0 +1,14 @@
+[
+    {
+        "name": "SSCTL",
+        "type": "Service"
+    },
+    {
+        "name": "Get Failure Reason",
+        "id": "0x22",
+        "type": "Message",
+        "since": "1.33",
+        "service": "SSCTL",
+        "vendor": "Apple"
+    }
+]

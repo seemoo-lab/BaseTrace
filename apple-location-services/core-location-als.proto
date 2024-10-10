@@ -1,0 +1,252 @@
+syntax = "proto2";
+
+package als_proto;
+
+message Location {
+  // Formula: latitude * pow(10, -8)
+  optional int64 latitude = 1;
+  // Formula: longitude * pow(10, -8)
+  optional int64 longitude = 2;
+  // Unit: meters
+  optional int32 accuracy = 3;
+  // Observed value: 0
+  optional int32 locationType = 4;
+  // Unit: meters, only set for Wifi APs
+  optional int32 altitude = 5;
+  // Unit: meters, only set for Wifi APs
+  optional int32 verticalAccuracy = 6;
+  // Unit: meters
+  optional uint32 reach = 11;
+  // Assumption: How often the wifi / cell was seen by Apple devices?
+  optional int32 score = 12;
+  // The field is never set and its function is unknown
+  optional uint32 infoMask = 13;
+}
+
+// We're able to confirm our assumptions with a field test.
+message WirelessAP {
+  // The MAC address of the Wifi router
+  optional string macID = 1;
+  // Location of the wireless access point, only set in responses
+  optional Location location = 2;
+  // The channel number of the Wifi, only set in responses
+  // See https://en.wikipedia.org/wiki/List_of_WLAN_channels
+  optional uint32 channel = 3;
+}
+
+message Nr5GCell {
+  // Mobile Country Code
+  // See https://en.wikipedia.org/wiki/Mobile_country_code
+  optional int32 mcc = 1;
+  // Mobile Network Code
+  // See https://en.wikipedia.org/wiki/List_of_mobile_network_operators_of_Europe
+  optional int32 mnc = 2;
+  // Unique number to identify a single cell within MCC + MNC + TAC.#
+  // If the value is -1 the location is only a rough estimate for the whole area (TAC).
+  optional int64 cellID = 3;
+  // Tracking Area Code
+  // See https://ec.europa.eu/eurostat/cros/content/Glossary%3ALocation_Area_Code/Tracking_Area_Code_%28LAC/TAC%29_en
+  optional int32 tacID = 4;
+  // Location of the cell, only set in responses
+  optional Location location = 5;
+  // New Radio Absolute Radio Frequency Channel Number, only set for cells in responses
+  // See https://www.cellmapper.net/arfcn?net=NR&ARFCN=0&MCC=222
+  // See https://de.wikipedia.org/wiki/ARFCN
+  optional int32 nrarfcn = 6;
+}
+
+// SCDMA is mainly used in China.
+// See: https://www.electronics-notes.com/articles/connectivity/3g-umts/td-scdma.php
+message ScdmaCell {
+  // Mobile Country Code
+  // See https://en.wikipedia.org/wiki/Mobile_country_code
+  optional int32 mcc = 1;
+  // Mobile Network Code
+  // See https://en.wikipedia.org/wiki/List_of_mobile_network_operators_of_Europe
+  optional int32 mnc = 2;
+  // Unique number to identify a single cell within MCC + MNC + TAC.#
+  // If the value is -1 the location is only a rough estimate for the whole area (LAC).
+  optional int32 cellID = 3;
+  // Location Area Code
+  // See https://ec.europa.eu/eurostat/cros/content/Glossary%3ALocation_Area_Code/Tracking_Area_Code_%28LAC/TAC%29_en
+  optional int32 lacID = 4;
+  // Location of the cell, only set for responses
+  optional Location location = 5;
+  // Absolute Radio Frequency Channel Number, only set for cells in responses
+  // See https://www.cellmapper.net/arfcn?net=NR&ARFCN=0&MCC=222
+  // See https://de.wikipedia.org/wiki/ARFCN
+  optional int32 arfcn = 6;
+  // Primary Scrambling Code, only set for cells in responses
+  // See https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9119377
+  optional int32 psc = 7;
+}
+
+// The message class is also used for UTMS cells.
+// We're able to confirm our assumptions with a field test.
+message LteCell {
+  // Mobile Country Code
+  // See https://en.wikipedia.org/wiki/Mobile_country_code
+  optional int32 mcc = 1;
+  // Mobile Network Code
+  // See https://en.wikipedia.org/wiki/List_of_mobile_network_operators_of_Europe
+  optional int32 mnc = 2;
+  // Unique number to identify a single cell within MCC + MNC + TAC.#
+  // If the value is -1 the location is only a rough estimate for the whole area (TAC).
+  optional int32 cellID = 3;
+  // Tracking Area Code
+  // See https://ec.europa.eu/eurostat/cros/content/Glossary%3ALocation_Area_Code/Tracking_Area_Code_%28LAC/TAC%29_en
+  optional int32 tacID = 4;
+  // Location of the cell, only set for responses
+  optional Location location = 5;
+  // UTRA Absolute Radio Frequency Channel Number, only set for cells in responses
+  // See https://www.cellmapper.net/arfcn?net=NR&ARFCN=0&MCC=222
+  // See https://de.wikipedia.org/wiki/ARFCN
+  optional int32 uarfcn = 6;
+  // This number could reference to the cell's PCI (Physical Cell Identity)
+  // See http://people.csail.mit.edu/bkph/cellular_repeater_numerology.shtml
+  optional int32 pid = 7;
+}
+
+// This message not only refers to GSM but also to UMTS cells.
+// In the source code it is simply named "ALSCellTower".
+// We're able to confirm our assumptions with field tests for GSM and UMTS cells.
+message GsmCell {
+  // Mobile Country Code
+  // See https://en.wikipedia.org/wiki/Mobile_country_code
+  optional int32 mcc = 1;
+  // Mobile Network Code
+  // See https://en.wikipedia.org/wiki/List_of_mobile_network_operators_of_Europe
+  optional int32 mnc = 2;
+  // Unique number to identify a single cell within MCC + MNC + TAC.#
+  // If the value is -1 the location is only a rough estimate for the whole area (LAC).
+  optional int64 cellID = 3;
+  // Location Area Code
+  // See https://ec.europa.eu/eurostat/cros/content/Glossary%3ALocation_Area_Code/Tracking_Area_Code_%28LAC/TAC%29_en
+  optional int32 lacID = 4;
+  // Location of the cell, only set for responses
+  optional Location location = 5;
+  // Absolute Radio Frequency Channel Number, only set for cells in responses
+  // See https://www.cellmapper.net/arfcn?net=NR&ARFCN=0&MCC=222
+  // See https://de.wikipedia.org/wiki/ARFCN
+  optional int32 arfcn = 6;
+  // Primary Scrambling Code, only set for cells in responses
+  // See https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9119377
+  optional int32 psc = 7;
+}
+
+message CdmaCell {
+  // Mobile Country Code
+  // See https://en.wikipedia.org/wiki/Mobile_country_code
+  optional int32 mcc = 1;
+  // System Identification (Number) which is worldwide unique
+  // See https://en.wikipedia.org/wiki/System_identification_number
+  optional int32 sid = 2;
+  // Network Identification (Number)
+  // See https://wiki.opencellid.org/wiki/Public:CDMA
+  optional int32 nid = 3;
+  // Basestation Identification (Number)
+  // See https://wiki.opencellid.org/wiki/Public:CDMA
+  optional int32 bsid = 4;
+  // Location of the cell, only set for responses
+  optional Location location = 5;
+  // Assumption: Zone Identification of the cell
+  optional int32 zoneid = 6;
+  // The frequency band of the cell, only set for cells in responses
+  // https://en.wikipedia.org/wiki/CDMA_frequency_bands
+  optional int32 bandclass = 7;
+  // Assumption: The frequency channel of the cell, only set for cells in responses
+  optional int32 channel = 8;
+  // Number to identify a basestation, only set for cells in responses
+  // See https://en.wikipedia.org/wiki/List_of_CDMA_terminology
+  optional int32 pnoffset = 9;
+}
+
+// Request to Apple's servers for retrieving location information.
+// If you're requesting nearby cells, only pass a single cell of a single type to the request.
+// If you're requesting nearby Wifi APs, you can send multiple MACs.
+//
+// See: locationd Objective-C method: -[ALSLocationRequest writeTo:]
+message ALSLocationRequest {
+  // A single GSM cell the iPhone is currently connected to.
+  // Do not specify cells of other types or any Wifi AP.
+  repeated GsmCell gsmCells = 1;
+
+  // Multiple Wifi APs in proximity.
+  // Do not specify cells.
+  repeated WirelessAP wirelessAPs = 2;
+
+  // This value is always set to 0.
+  // We could observe this for LTE, GSM, and Wifi requests.
+  optional int32 numberOfSurroundingCells = 3;
+
+  // This value is set for LTE and GSM requests to 1.
+  // It is set for Wifi requests to 100.
+  optional int32 numberOfSurroundingWifis = 4;
+
+  // Never set presumably because it's transmitted through the custom header
+  optional string appBundleId = 5;
+
+  // A single CDMA cell the iPhone is currently connected to.
+  // Do not specify cells of other types or any Wifi AP.
+  repeated CdmaCell cdmaCells = 21;
+  // A single CDMA-EVDO cell the iPhone is currently connected to.
+  // Do not specify cells of other types or any Wifi AP.
+  repeated CdmaCell cdmaEvdoCells = 22;
+  // Assumption: This value is never set even when requesting CDMA cells.
+  optional int32 numberOfSurroundingCdmaCells = 23;
+  // Assumption: This value is never set even when requesting CDMA-EVDO cells.
+  optional int32 numberOfSurroundingCdmaEvdoCells = 24;
+
+  // A single LTE cell the iPhone is currently connected to.
+  // Do not specify cells of other types or any Wifi AP.
+  repeated LteCell lteCells = 25;
+  // This value is never set even when requesting LTE cells.
+  optional int32 numberOfSurroundingLteCells = 26;
+
+  // A single SCDMA cell the iPhone is currently connected to.
+  // Do not specify cells of other types or any Wifi AP.
+  repeated ScdmaCell scdmaCells = 27;
+  // Assumption: This value is never set even when requesting SCDMA cells.
+  optional int32 numberOfSurroundingScdmaCells = 28;
+
+  // A single Nr5G cell the iPhone is currently connected to.
+  // Do not specify cells of other types or any Wifi AP.
+  repeated Nr5GCell nr5GCells = 29;
+  // Assumption: This value is never set even when requesting Nr5G cells.
+  optional int32 numberOfSurroundingNr5GCells = 30;
+
+  // Assumption for values:
+  // 1 = k2dot4GHZ
+  // 2 = k5GHZ
+  // The value is always set to k2dot4GHZ (even for cell request).
+  repeated int32 surroundingWifiBands = 31;
+
+  // LTE / UMTS: Not set (on iPhone 12 mini with iOS 14.2.1)
+  // GSM: Set to 2 (on iPhone 6S with iOS 15.7.2)
+  // optional int32 unknown32 = 32;
+}
+
+// Response from Apple's servers for a ALSLocationRequest.
+// Depending on the request only one of the repeated values is used.
+//
+// See: locationd Objective-C method: -[ALSLocationResponse readFrom:]
+message ALSLocationResponse {
+
+  // List of nearby GSM cells with location data
+  repeated GsmCell gsmCells = 1;
+
+  // List of nearby wireless access points with location data
+  repeated WirelessAP wirelessAPs = 2;
+
+  // List of nearby CDMA & CDMA-EVDO cells with location data
+  repeated CdmaCell cdmaCells = 21;
+
+  // List of nearby LTE / UMTS cells with location data
+  repeated LteCell lteCells = 22;
+
+  // List of nearby SCDMA cells with location data
+  repeated ScdmaCell scdmaCells = 23;
+
+  // List of nearby Nr5G cells with location data
+  repeated Nr5GCell nr5GCells = 24;
+}

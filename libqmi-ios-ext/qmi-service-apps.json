@@ -1,0 +1,62 @@
+[
+    {
+        "name": "APPS",
+        "type": "Service"
+    },
+    {
+        "name": "Get Wake Reason",
+        "id": "0xD008",
+        "type": "Message",
+        "since": "1.33",
+        "service": "APPS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Config MHI Log Payload",
+        "id": "0xD009",
+        "type": "Message",
+        "since": "1.33",
+        "service": "APPS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Set MHI Log Level",
+        "id": "0xD00A",
+        "type": "Message",
+        "since": "1.33",
+        "service": "APPS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Set PCIe Log Level",
+        "id": "0xD00B",
+        "type": "Message",
+        "since": "1.33",
+        "service": "APPS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Get PCIe Logs",
+        "id": "0xD00D",
+        "type": "Message",
+        "since": "1.33",
+        "service": "APPS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Get PCIe Info",
+        "id": "0xD00E",
+        "type": "Message",
+        "since": "1.33",
+        "service": "APPS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Get MHI Logs",
+        "id": "0xD00c",
+        "type": "Message",
+        "since": "1.33",
+        "service": "APPS",
+        "vendor": "Apple"
+    }
+]

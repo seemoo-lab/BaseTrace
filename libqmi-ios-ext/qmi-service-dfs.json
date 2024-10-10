@@ -1,0 +1,38 @@
+[
+    {
+        "name": "DFS",
+        "type": "Service"
+    },
+    {
+        "name": "Bind Client",
+        "id": "0x21",
+        "type": "Message",
+        "since": "1.33",
+        "service": "DFS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Add Powersave Filters",
+        "id": "0x28",
+        "type": "Message",
+        "since": "1.33",
+        "service": "DFS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Set Powersave Filter Mode",
+        "id": "0x29",
+        "type": "Message",
+        "since": "1.33",
+        "service": "DFS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Remove All Powersave Filters",
+        "id": "0x2D",
+        "type": "Message",
+        "since": "1.33",
+        "service": "DFS",
+        "vendor": "Apple"
+    }
+]

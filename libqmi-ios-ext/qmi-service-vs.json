@@ -1,0 +1,110 @@
+[
+    {
+        "name": "VOICE",
+        "type": "Service"
+    },
+    {
+        "name": "OTASP Status",
+        "id": "0x25",
+        "type": "Indication",
+        "since": "1.33",
+        "service": "VOICE",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Voice Info Rec",
+        "id": "0x26",
+        "type": "Indication",
+        "since": "1.33",
+        "service": "VOICE",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Set SUPS Service",
+        "id": "0x33",
+        "type": "Message",
+        "since": "1.33",
+        "service": "VOICE",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Fetch Call Waiting",
+        "id": "0x34",
+        "type": "Message",
+        "since": "1.33",
+        "service": "VOICE",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Fetch Call Barring",
+        "id": "0x35",
+        "type": "Message",
+        "since": "1.33",
+        "service": "VOICE",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Set Call Barring Password",
+        "id": "0x35",
+        "type": "Message",
+        "since": "1.33",
+        "service": "VOICE",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Fetch CLIPEN",
+        "id": "0x36",
+        "type": "Message",
+        "since": "1.33",
+        "service": "VOICE",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Fetch Call Forwarding",
+        "id": "0x38",
+        "type": "Message",
+        "since": "1.33",
+        "service": "VOICE",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Bind Subscription",
+        "id": "0x44",
+        "type": "Message",
+        "since": "1.33",
+        "service": "VOICE",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Fetch COLREN",
+        "id": "0x4C",
+        "type": "Message",
+        "since": "1.33",
+        "service": "VOICE",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Fetch CNAPEN",
+        "id": "0x4C",
+        "type": "Message",
+        "since": "1.33",
+        "service": "VOICE",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Voice Handover",
+        "id": "0x54",
+        "type": "Indication",
+        "since": "1.33",
+        "service": "VOICE",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Call Ready",
+        "id": "0xE3",
+        "type": "Indication",
+        "since": "1.33",
+        "service": "VOICE",
+        "vendor": "Apple"
+    }
+]

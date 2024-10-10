@@ -1,0 +1,38 @@
+[
+    {
+        "name": "ELQM",
+        "type": "Service"
+    },
+    {
+        "name": "Register",
+        "id": "0x1",
+        "type": "Message",
+        "since": "1.33",
+        "service": "ELQM",
+        "vendor": "Apple"
+    },
+    {
+        "name": "BB Indication",
+        "id": "0x2",
+        "type": "Indication",
+        "since": "1.33",
+        "service": "ELQM",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Send Traffic Info",
+        "id": "0x3",
+        "type": "Message",
+        "since": "1.33",
+        "service": "ELQM",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Query",
+        "id": "0x4",
+        "type": "Message",
+        "since": "1.33",
+        "service": "ELQM",
+        "vendor": "Apple"
+    }
+]

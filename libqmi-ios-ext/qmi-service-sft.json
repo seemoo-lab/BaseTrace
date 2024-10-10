@@ -1,0 +1,206 @@
+[
+    {
+        "name": "SFT",
+        "type": "Service"
+    },
+    {
+        "name": "Activation",
+        "id": "0x1001",
+        "type": "Message",
+        "since": "1.33",
+        "service": "SFT",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Deactivate",
+        "id": "0x1002",
+        "type": "Message",
+        "since": "1.33",
+        "service": "SFT",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Deactivation Complete",
+        "id": "0x1003",
+        "type": "Indication",
+        "since": "1.33",
+        "service": "SFT",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Suspend",
+        "id": "0x1004",
+        "type": "Message",
+        "since": "1.33",
+        "service": "SFT",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Request State Change",
+        "id": "0x1005",
+        "type": "Indication",
+        "since": "1.33",
+        "service": "SFT",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Suspend",
+        "id": "0x1006",
+        "type": "Message",
+        "since": "1.33",
+        "service": "SFT",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Security Config",
+        "id": "0x1101",
+        "type": "Message",
+        "since": "1.33",
+        "service": "SFT",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Security Config Update Needed",
+        "id": "0x1102",
+        "type": "Indication",
+        "since": "1.33",
+        "service": "SFT",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Security Config Usage",
+        "id": "0x1103",
+        "type": "Indication",
+        "since": "1.33",
+        "service": "SFT",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Request Service Info",
+        "id": "0x1201",
+        "type": "Message",
+        "since": "1.33",
+        "service": "SFT",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Service Info",
+        "id": "0x1202",
+        "type": "Indication",
+        "since": "1.33",
+        "service": "SFT",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Send Message",
+        "id": "0x1301",
+        "type": "Message",
+        "since": "1.33",
+        "service": "SFT",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Message TX Status",
+        "id": "0x1302",
+        "type": "Indication",
+        "since": "1.33",
+        "service": "SFT",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Message RX",
+        "id": "0x1303",
+        "type": "Message",
+        "since": "1.33",
+        "service": "SFT",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Ack Received Message",
+        "id": "0x1303",
+        "type": "Message",
+        "since": "1.33",
+        "service": "SFT",
+        "vendor": "Apple"
+    },
+    {
+        "name": "S4 Config Segement",
+        "id": "0x1401",
+        "type": "Message",
+        "since": "1.33",
+        "service": "SFT",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Initiate Registration",
+        "id": "0x1501",
+        "type": "Message",
+        "since": "1.33",
+        "service": "SFT",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Concurrency Config",
+        "id": "0x2001",
+        "type": "Message",
+        "since": "1.33",
+        "service": "SFT",
+        "vendor": "Apple"
+    },
+    {
+        "name": "GPS Data Update",
+        "id": "0x2101",
+        "type": "Message",
+        "since": "1.33",
+        "service": "SFT",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Get Capabilities",
+        "id": "0x2202",
+        "type": "Message",
+        "since": "1.33",
+        "service": "SFT",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Update Orientation",
+        "id": "0x2204",
+        "type": "Message",
+        "since": "1.33",
+        "service": "SFT",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Get Cellular Tx Defer Timer",
+        "id": "0x2205",
+        "type": "Message",
+        "since": "1.33",
+        "service": "SFT",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Send Diag Cmd",
+        "id": "0x3001",
+        "type": "Message",
+        "since": "1.33",
+        "service": "SFT",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Send File",
+        "id": "0xA000",
+        "type": "Message",
+        "since": "1.33",
+        "service": "SFT",
+        "vendor": "Apple"
+    },
+    {
+        "name": "File Transfer Status",
+        "id": "0xA001",
+        "type": "Indication",
+        "since": "1.33",
+        "service": "SFT",
+        "vendor": "Apple"
+    }
+]

@@ -1,0 +1,134 @@
+[
+    {
+        "name": "WMS",
+        "type": "Service"
+    },
+    {
+        "name": "Get SMSC Subscriber Sim Slot",
+        "id": "0x34",
+        "type": "Message",
+        "since": "1.33",
+        "service": "WMS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Set SMSC Address",
+        "id": "0x35",
+        "type": "Message",
+        "since": "1.33",
+        "service": "WMS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Set DC Disconnect Timer",
+        "id": "0x3A",
+        "type": "Message",
+        "since": "1.33",
+        "service": "WMS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Get Broadcast Config",
+        "id": "0x3E",
+        "type": "Message",
+        "since": "1.33",
+        "service": "WMS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Fetch Voicemail Notifications",
+        "id": "0x43",
+        "type": "Message",
+        "since": "1.33",
+        "service": "WMS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Message Waiting",
+        "id": "0x44",
+        "type": "Indication",
+        "since": "1.33",
+        "service": "WMS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "SMSC Info",
+        "id": "0x46",
+        "type": "Indication",
+        "since": "1.33",
+        "service": "WMS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Indication Register",
+        "id": "0x47",
+        "type": "Message",
+        "since": "1.33",
+        "service": "WMS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Transport Layer Registration",
+        "id": "0x49",
+        "type": "Indication",
+        "since": "1.33",
+        "service": "WMS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Bind Subscription",
+        "id": "0x4C",
+        "type": "Message",
+        "since": "1.33",
+        "service": "WMS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Get Service Ready Status",
+        "id": "0x5C",
+        "type": "Message",
+        "since": "1.33",
+        "service": "WMS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Service Ready Status",
+        "id": "0x5D",
+        "type": "Indication",
+        "since": "1.33",
+        "service": "WMS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Set Message Waiting",
+        "id": "0x5F",
+        "type": "Message",
+        "since": "1.33",
+        "service": "WMS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Register Indication",
+        "id": "0x69",
+        "type": "Message",
+        "since": "1.33",
+        "service": "WMS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Set Broadcast Activation",
+        "id": "0x3C",
+        "type": "Message",
+        "since": "1.33",
+        "service": "WMS",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Set Broadcast Config 3GPP2",
+        "id": "0x3D",
+        "type": "Message",
+        "since": "1.33",
+        "service": "WMS",
+        "vendor": "Apple"
+    }
+]

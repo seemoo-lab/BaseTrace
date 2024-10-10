@@ -1,0 +1,21 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+protobuf = "*"
+pandas = "*"
+numpy = "*"
+tqdm = "*"
+geopy = "*"
+matplotlib = "*"
+simplekml = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3"
+
+[scripts]
+proto = "protoc -I . --python_out=lib --pyi_out=lib core-location-als.proto"

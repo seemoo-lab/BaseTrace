@@ -1,0 +1,14 @@
+[
+    {
+        "name": "AT",
+        "type": "Service"
+    },
+    {
+        "name": "Received Command",
+        "id": "0x26",
+        "type": "Indication",
+        "since": "1.33",
+        "service": "AT",
+        "vendor": "Apple"
+    }
+]

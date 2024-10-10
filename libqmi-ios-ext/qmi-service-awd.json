@@ -1,0 +1,70 @@
+[
+    {
+        "name": "AWD",
+        "type": "Service"
+    },
+    {
+        "name": "Set Config",
+        "id": "0x1000",
+        "type": "Message",
+        "since": "1.33",
+        "service": "AWD",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Set Queriable Metrics",
+        "id": "0x1001",
+        "type": "Message",
+        "since": "1.33",
+        "service": "AWD",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Register Metric Indication",
+        "id": "0x1002",
+        "type": "Message",
+        "since": "1.33",
+        "service": "AWD",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Metric Submission",
+        "id": "0x1010",
+        "type": "Indication",
+        "since": "1.33",
+        "service": "AWD",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Metric Submission End",
+        "id": "0x1011",
+        "type": "Indication",
+        "since": "1.33",
+        "service": "AWD",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Submit Trigger",
+        "id": "0x1012",
+        "type": "Indication",
+        "since": "1.33",
+        "service": "AWD",
+        "vendor": "Apple"
+    },
+    {
+        "name": "PII Location Used",
+        "id": "0x1013",
+        "type": "Indication",
+        "since": "1.33",
+        "service": "AWD",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Configuration Success",
+        "id": "0x1020",
+        "type": "Indication",
+        "since": "1.33",
+        "service": "AWD",
+        "vendor": "Apple"
+    }
+]

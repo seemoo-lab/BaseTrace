@@ -1,0 +1,101 @@
+[
+    {
+        "name": "AUDIO",
+        "type": "Service"
+    },
+    {
+        "name": "Start Tone",
+        "id": "0x2A",
+        "type": "Message",
+        "since": "1.33",
+        "service": "AUDIO",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Stop Tone",
+        "id": "0x2B",
+        "type": "Message",
+        "since": "1.33",
+        "service": "AUDIO",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Audio Tone Done",
+        "id": "0x2C",
+        "type": "Message",
+        "since": "1.33",
+        "service": "AUDIO",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Audio Interface Status",
+        "id": "0x2D",
+        "type": "Indication",
+        "since": "1.33",
+        "service": "AUDIO",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Burst DTMF Tone",
+        "id": "0x2E",
+        "type": "Indication",
+        "since": "1.33",
+        "service": "AUDIO",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Get Vocoder Type",
+        "id": "0x2F",
+        "type": "Message",
+        "since": "1.33",
+        "service": "AUDIO",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Vocoder Type Info",
+        "id": "0x30",
+        "type": "Indication",
+        "since": "1.33",
+        "service": "AUDIO",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Send Call Event",
+        "id": "0x33",
+        "type": "Message",
+        "since": "1.33",
+        "service": "AUDIO",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Codec Change CB Register",
+        "id": "0x33",
+        "type": "Message",
+        "since": "1.33",
+        "service": "AUDIO",
+        "vendor": "Apple"
+    },
+    {
+        "name": "CodecChangeCbRegister",
+        "id": "0x34",
+        "type": "Message",
+        "service": "AUDIO",
+        "vendor": "Apple (Ghidra)"
+    },
+    {
+        "name": "Audio Statistics",
+        "id": "0x35",
+        "type": "Indication",
+        "since": "1.33",
+        "service": "AUDIO",
+        "vendor": "Apple"
+    },
+    {
+        "name": "Audio Distortion",
+        "id": "0x36",
+        "type": "Indication",
+        "since": "1.33",
+        "service": "AUDIO",
+        "vendor": "Apple"
+    }
+]
