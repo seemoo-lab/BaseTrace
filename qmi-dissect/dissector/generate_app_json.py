@@ -112,7 +112,7 @@ def main():
     )
     args = parser.parse_args()
 
-    build_dir = Path("build")
+    build_dir = Path(__file__).parent / "build"
     data_dir = Path(args.libqmi_data)
     data_ios_dir = Path(args.libqmi_ios_extension)
 

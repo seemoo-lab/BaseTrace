@@ -250,7 +250,7 @@ class QMIDissector:
 
     def lua_template(self, template_params: dict) -> Path:
         """ Replace template variables in a Lua template file with template parameters and save the resulting file. """
-        template_path = Path("qmi_dissector_template.lua")
+        template_path = Path(__file__).parent / "qmi_dissector_template.lua"
         output_path = self.build_dir.joinpath("qmi_dissector_gen.lua")
         pattern = re.compile("GENERATE\\((\\w+)\\)")
 
@@ -308,7 +308,7 @@ def main():
     )
     args = parser.parse_args()
 
-    build_dir = Path("build")
+    build_dir = Path(__file__).parent / "build"
     data_dir = Path(args.libqmi_data)
     data_ios_dir = Path(args.libqmi_ios_extension)
 
