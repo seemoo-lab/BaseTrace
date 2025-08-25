@@ -58,7 +58,7 @@ More information can be found at [apple/swift-protobuf](https://github.com/apple
 # Install the additional Swift protobuf plugin
 brew install swift-protobuf
 # Generate the Swift in the folder swift
-protoc --swift_out=swift core-location-als.proto
+protoc --swift_out=swift apple-location-services.proto
 ```
 
 ## CellGuard Evaluation

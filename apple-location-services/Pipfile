@@ -18,4 +18,4 @@ simplekml = "*"
 python_version = "3"
 
 [scripts]
-proto = "protoc -I . --python_out=lib --pyi_out=lib core-location-als.proto"
+proto = "protoc -I . --python_out=lib/proto --pyi_out=lib/proto apple-location-services.proto"

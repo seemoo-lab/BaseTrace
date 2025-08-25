@@ -1,9 +1,33 @@
 from google.protobuf.internal import containers as _containers
+from google.protobuf.internal import enum_type_wrapper as _enum_type_wrapper
 from google.protobuf import descriptor as _descriptor
 from google.protobuf import message as _message
-from typing import ClassVar as _ClassVar, Iterable as _Iterable, Mapping as _Mapping, Optional as _Optional, Union as _Union
+from collections.abc import Iterable as _Iterable, Mapping as _Mapping
+from typing import ClassVar as _ClassVar, Optional as _Optional, Union as _Union
 
 DESCRIPTOR: _descriptor.FileDescriptor
+
+class AltitudeScale(int, metaclass=_enum_type_wrapper.EnumTypeWrapper):
+    __slots__ = ()
+    None: _ClassVar[AltitudeScale]
+    Scale10toThe2: _ClassVar[AltitudeScale]
+
+class WifiBand(int, metaclass=_enum_type_wrapper.EnumTypeWrapper):
+    __slots__ = ()
+    k2dot4GHZ: _ClassVar[WifiBand]
+    k5GHZ: _ClassVar[WifiBand]
+None: AltitudeScale
+Scale10toThe2: AltitudeScale
+k2dot4GHZ: WifiBand
+k5GHZ: WifiBand
+
+class Meta(_message.Message):
+    __slots__ = ("softwareBuild", "productId")
+    SOFTWAREBUILD_FIELD_NUMBER: _ClassVar[int]
+    PRODUCTID_FIELD_NUMBER: _ClassVar[int]
+    softwareBuild: str
+    productId: str
+    def __init__(self, softwareBuild: _Optional[str] = ..., productId: _Optional[str] = ...) -> None: ...
 
 class Location(_message.Message):
     __slots__ = ("latitude", "longitude", "accuracy", "locationType", "altitude", "verticalAccuracy", "reach", "score", "infoMask")
@@ -28,14 +52,16 @@ class Location(_message.Message):
     def __init__(self, latitude: _Optional[int] = ..., longitude: _Optional[int] = ..., accuracy: _Optional[int] = ..., locationType: _Optional[int] = ..., altitude: _Optional[int] = ..., verticalAccuracy: _Optional[int] = ..., reach: _Optional[int] = ..., score: _Optional[int] = ..., infoMask: _Optional[int] = ...) -> None: ...
 
 class WirelessAP(_message.Message):
-    __slots__ = ("macID", "location", "channel")
+    __slots__ = ("macID", "location", "channel", "numZAxisHarvestTraces")
     MACID_FIELD_NUMBER: _ClassVar[int]
     LOCATION_FIELD_NUMBER: _ClassVar[int]
     CHANNEL_FIELD_NUMBER: _ClassVar[int]
+    NUMZAXISHARVESTTRACES_FIELD_NUMBER: _ClassVar[int]
     macID: str
     location: Location
     channel: int
-    def __init__(self, macID: _Optional[str] = ..., location: _Optional[_Union[Location, _Mapping]] = ..., channel: _Optional[int] = ...) -> None: ...
+    numZAxisHarvestTraces: int
+    def __init__(self, macID: _Optional[str] = ..., location: _Optional[_Union[Location, _Mapping]] = ..., channel: _Optional[int] = ..., numZAxisHarvestTraces: _Optional[int] = ...) -> None: ...
 
 class Nr5GCell(_message.Message):
     __slots__ = ("mcc", "mnc", "cellID", "tacID", "location", "nrarfcn")
@@ -130,7 +156,7 @@ class CdmaCell(_message.Message):
     def __init__(self, mcc: _Optional[int] = ..., sid: _Optional[int] = ..., nid: _Optional[int] = ..., bsid: _Optional[int] = ..., location: _Optional[_Union[Location, _Mapping]] = ..., zoneid: _Optional[int] = ..., bandclass: _Optional[int] = ..., channel: _Optional[int] = ..., pnoffset: _Optional[int] = ...) -> None: ...
 
 class ALSLocationRequest(_message.Message):
-    __slots__ = ("gsmCells", "wirelessAPs", "numberOfSurroundingCells", "numberOfSurroundingWifis", "appBundleId", "cdmaCells", "cdmaEvdoCells", "numberOfSurroundingCdmaCells", "numberOfSurroundingCdmaEvdoCells", "lteCells", "numberOfSurroundingLteCells", "scdmaCells", "numberOfSurroundingScdmaCells", "nr5GCells", "numberOfSurroundingNr5GCells", "surroundingWifiBands")
+    __slots__ = ("gsmCells", "wirelessAPs", "numberOfSurroundingCells", "numberOfSurroundingWifis", "appBundleId", "cdmaCells", "cdmaEvdoCells", "numberOfSurroundingCdmaCells", "numberOfSurroundingCdmaEvdoCells", "lteCells", "numberOfSurroundingLteCells", "scdmaCells", "numberOfSurroundingScdmaCells", "nr5GCells", "numberOfSurroundingNr5GCells", "surroundingWifiBands", "wifiAltitudeScale", "meta")
     GSMCELLS_FIELD_NUMBER: _ClassVar[int]
     WIRELESSAPS_FIELD_NUMBER: _ClassVar[int]
     NUMBEROFSURROUNDINGCELLS_FIELD_NUMBER: _ClassVar[int]
@@ -147,6 +173,8 @@ class ALSLocationRequest(_message.Message):
     NR5GCELLS_FIELD_NUMBER: _ClassVar[int]
     NUMBEROFSURROUNDINGNR5GCELLS_FIELD_NUMBER: _ClassVar[int]
     SURROUNDINGWIFIBANDS_FIELD_NUMBER: _ClassVar[int]
+    WIFIALTITUDESCALE_FIELD_NUMBER: _ClassVar[int]
+    META_FIELD_NUMBER: _ClassVar[int]
     gsmCells: _containers.RepeatedCompositeFieldContainer[GsmCell]
     wirelessAPs: _containers.RepeatedCompositeFieldContainer[WirelessAP]
     numberOfSurroundingCells: int
@@ -162,8 +190,10 @@ class ALSLocationRequest(_message.Message):
     numberOfSurroundingScdmaCells: int
     nr5GCells: _containers.RepeatedCompositeFieldContainer[Nr5GCell]
     numberOfSurroundingNr5GCells: int
-    surroundingWifiBands: _containers.RepeatedScalarFieldContainer[int]
-    def __init__(self, gsmCells: _Optional[_Iterable[_Union[GsmCell, _Mapping]]] = ..., wirelessAPs: _Optional[_Iterable[_Union[WirelessAP, _Mapping]]] = ..., numberOfSurroundingCells: _Optional[int] = ..., numberOfSurroundingWifis: _Optional[int] = ..., appBundleId: _Optional[str] = ..., cdmaCells: _Optional[_Iterable[_Union[CdmaCell, _Mapping]]] = ..., cdmaEvdoCells: _Optional[_Iterable[_Union[CdmaCell, _Mapping]]] = ..., numberOfSurroundingCdmaCells: _Optional[int] = ..., numberOfSurroundingCdmaEvdoCells: _Optional[int] = ..., lteCells: _Optional[_Iterable[_Union[LteCell, _Mapping]]] = ..., numberOfSurroundingLteCells: _Optional[int] = ..., scdmaCells: _Optional[_Iterable[_Union[ScdmaCell, _Mapping]]] = ..., numberOfSurroundingScdmaCells: _Optional[int] = ..., nr5GCells: _Optional[_Iterable[_Union[Nr5GCell, _Mapping]]] = ..., numberOfSurroundingNr5GCells: _Optional[int] = ..., surroundingWifiBands: _Optional[_Iterable[int]] = ...) -> None: ...
+    surroundingWifiBands: _containers.RepeatedScalarFieldContainer[WifiBand]
+    wifiAltitudeScale: AltitudeScale
+    meta: Meta
+    def __init__(self, gsmCells: _Optional[_Iterable[_Union[GsmCell, _Mapping]]] = ..., wirelessAPs: _Optional[_Iterable[_Union[WirelessAP, _Mapping]]] = ..., numberOfSurroundingCells: _Optional[int] = ..., numberOfSurroundingWifis: _Optional[int] = ..., appBundleId: _Optional[str] = ..., cdmaCells: _Optional[_Iterable[_Union[CdmaCell, _Mapping]]] = ..., cdmaEvdoCells: _Optional[_Iterable[_Union[CdmaCell, _Mapping]]] = ..., numberOfSurroundingCdmaCells: _Optional[int] = ..., numberOfSurroundingCdmaEvdoCells: _Optional[int] = ..., lteCells: _Optional[_Iterable[_Union[LteCell, _Mapping]]] = ..., numberOfSurroundingLteCells: _Optional[int] = ..., scdmaCells: _Optional[_Iterable[_Union[ScdmaCell, _Mapping]]] = ..., numberOfSurroundingScdmaCells: _Optional[int] = ..., nr5GCells: _Optional[_Iterable[_Union[Nr5GCell, _Mapping]]] = ..., numberOfSurroundingNr5GCells: _Optional[int] = ..., surroundingWifiBands: _Optional[_Iterable[_Union[WifiBand, str]]] = ..., wifiAltitudeScale: _Optional[_Union[AltitudeScale, str]] = ..., meta: _Optional[_Union[Meta, _Mapping]] = ...) -> None: ...
 
 class ALSLocationResponse(_message.Message):
     __slots__ = ("gsmCells", "wirelessAPs", "cdmaCells", "lteCells", "scdmaCells", "nr5GCells")

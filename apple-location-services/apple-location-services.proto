@@ -2,6 +2,21 @@ syntax = "proto2";
 
 package als_proto;
 
+message Meta {
+  optional string softwareBuild = 1;
+  optional string productId = 2;
+}
+
+enum AltitudeScale {
+  None = 1;
+  Scale10toThe2 = 2;
+}
+
+enum WifiBand {
+  k2dot4GHZ = 1;
+  k5GHZ = 2;
+}
+
 message Location {
   // Formula: latitude * pow(10, -8)
   optional int64 latitude = 1;
@@ -16,11 +31,11 @@ message Location {
   // Unit: meters, only set for Wifi APs
   optional int32 verticalAccuracy = 6;
   // Unit: meters
-  optional uint32 reach = 11;
+  optional uint32 reach = 0xb;
   // Assumption: How often the wifi / cell was seen by Apple devices?
-  optional int32 score = 12;
+  optional int32 score = 0xc;
   // The field is never set and its function is unknown
-  optional uint32 infoMask = 13;
+  optional uint32 infoMask = 0xd;
 }
 
 // We're able to confirm our assumptions with a field test.
@@ -31,7 +46,8 @@ message WirelessAP {
   optional Location location = 2;
   // The channel number of the Wifi, only set in responses
   // See https://en.wikipedia.org/wiki/List_of_WLAN_channels
-  optional uint32 channel = 3;
+  optional uint32 channel = 0x15;
+  optional uint32 numZAxisHarvestTraces = 0x16;
 }
 
 message Nr5GCell {
@@ -72,13 +88,14 @@ message ScdmaCell {
   optional int32 lacID = 4;
   // Location of the cell, only set for responses
   optional Location location = 5;
-  // Absolute Radio Frequency Channel Number, only set for cells in responses
+  // (UTRA) Absolute Radio Frequency Channel Number, set for some GSM & UMTS cells in responses
   // See https://www.cellmapper.net/arfcn?net=NR&ARFCN=0&MCC=222
   // See https://de.wikipedia.org/wiki/ARFCN
-  optional int32 arfcn = 6;
-  // Primary Scrambling Code, only set for cells in responses
+  // See: https://de.wikipedia.org/wiki/UTRA_Absolute_Radio_Frequency_Channel_Number
+  optional int32 arfcn = 0xb;
+  // Primary Scrambling Code, only set for UMTS cells in responses
   // See https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9119377
-  optional int32 psc = 7;
+  optional int32 psc = 0xc;
 }
 
 // The message class is also used for UTMS cells.
@@ -125,13 +142,14 @@ message GsmCell {
   optional int32 lacID = 4;
   // Location of the cell, only set for responses
   optional Location location = 5;
-  // Absolute Radio Frequency Channel Number, only set for cells in responses
+  // (UTRA) Absolute Radio Frequency Channel Number, set for some GSM & UMTS cells in responses
   // See https://www.cellmapper.net/arfcn?net=NR&ARFCN=0&MCC=222
   // See https://de.wikipedia.org/wiki/ARFCN
-  optional int32 arfcn = 6;
-  // Primary Scrambling Code, only set for cells in responses
+  // See: https://de.wikipedia.org/wiki/UTRA_Absolute_Radio_Frequency_Channel_Number
+  optional int32 arfcn = 0xb;
+  // Primary Scrambling Code, only set for UMTS cells in responses
   // See https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9119377
-  optional int32 psc = 7;
+  optional int32 psc = 0xc;
 }
 
 message CdmaCell {
@@ -140,25 +158,25 @@ message CdmaCell {
   optional int32 mcc = 1;
   // System Identification (Number) which is worldwide unique
   // See https://en.wikipedia.org/wiki/System_identification_number
-  optional int32 sid = 2;
+  optional int32 sid = 3;
   // Network Identification (Number)
   // See https://wiki.opencellid.org/wiki/Public:CDMA
-  optional int32 nid = 3;
+  optional int32 nid = 4;
   // Basestation Identification (Number)
   // See https://wiki.opencellid.org/wiki/Public:CDMA
-  optional int32 bsid = 4;
+  optional int32 bsid = 5;
   // Location of the cell, only set for responses
-  optional Location location = 5;
+  optional Location location = 6;
   // Assumption: Zone Identification of the cell
-  optional int32 zoneid = 6;
+  optional int32 zoneid = 7;
   // The frequency band of the cell, only set for cells in responses
   // https://en.wikipedia.org/wiki/CDMA_frequency_bands
-  optional int32 bandclass = 7;
+  optional int32 bandclass = 8;
   // Assumption: The frequency channel of the cell, only set for cells in responses
-  optional int32 channel = 8;
+  optional int32 channel = 9;
   // Number to identify a basestation, only set for cells in responses
   // See https://en.wikipedia.org/wiki/List_of_CDMA_terminology
-  optional int32 pnoffset = 9;
+  optional int32 pnoffset = 0xa;
 }
 
 // Request to Apple's servers for retrieving location information.
@@ -188,42 +206,42 @@ message ALSLocationRequest {
 
   // A single CDMA cell the iPhone is currently connected to.
   // Do not specify cells of other types or any Wifi AP.
-  repeated CdmaCell cdmaCells = 21;
+  repeated CdmaCell cdmaCells = 0x15;
   // A single CDMA-EVDO cell the iPhone is currently connected to.
   // Do not specify cells of other types or any Wifi AP.
-  repeated CdmaCell cdmaEvdoCells = 22;
+  repeated CdmaCell cdmaEvdoCells = 0x16;
   // Assumption: This value is never set even when requesting CDMA cells.
-  optional int32 numberOfSurroundingCdmaCells = 23;
+  optional int32 numberOfSurroundingCdmaCells = 0x17;
   // Assumption: This value is never set even when requesting CDMA-EVDO cells.
-  optional int32 numberOfSurroundingCdmaEvdoCells = 24;
+  optional int32 numberOfSurroundingCdmaEvdoCells = 0x18;
 
   // A single LTE cell the iPhone is currently connected to.
   // Do not specify cells of other types or any Wifi AP.
-  repeated LteCell lteCells = 25;
+  repeated LteCell lteCells = 0x19;
   // This value is never set even when requesting LTE cells.
-  optional int32 numberOfSurroundingLteCells = 26;
+  optional int32 numberOfSurroundingLteCells = 0x1a;
 
   // A single SCDMA cell the iPhone is currently connected to.
   // Do not specify cells of other types or any Wifi AP.
-  repeated ScdmaCell scdmaCells = 27;
+  repeated ScdmaCell scdmaCells = 0x1b;
   // Assumption: This value is never set even when requesting SCDMA cells.
-  optional int32 numberOfSurroundingScdmaCells = 28;
+  optional int32 numberOfSurroundingScdmaCells = 0x1c;
 
   // A single Nr5G cell the iPhone is currently connected to.
   // Do not specify cells of other types or any Wifi AP.
-  repeated Nr5GCell nr5GCells = 29;
+  repeated Nr5GCell nr5GCells = 0x1d;
   // Assumption: This value is never set even when requesting Nr5G cells.
-  optional int32 numberOfSurroundingNr5GCells = 30;
+  optional int32 numberOfSurroundingNr5GCells = 0x1e;
 
-  // Assumption for values:
-  // 1 = k2dot4GHZ
-  // 2 = k5GHZ
   // The value is always set to k2dot4GHZ (even for cell request).
-  repeated int32 surroundingWifiBands = 31;
+  repeated WifiBand surroundingWifiBands = 0x1f;
 
   // LTE / UMTS: Not set (on iPhone 12 mini with iOS 14.2.1)
   // GSM: Set to 2 (on iPhone 6S with iOS 15.7.2)
-  // optional int32 unknown32 = 32;
+  optional AltitudeScale wifiAltitudeScale = 0x20;
+
+  // Device metadata
+  optional Meta meta = 0x21;
 }
 
 // Response from Apple's servers for a ALSLocationRequest.
