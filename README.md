@@ -42,7 +42,7 @@ ARIstoles is a Wireshark dissector for iPhones with Apple or Intel basebands.
 
 Works with all iPhones.
 
-### [C1 Binary Ninja Loader](./c1-binja-loader)
+### [C1 Binary Ninja Loader](./c1-loader)
 
 iPhones with Apple basebands (C1, C1X, ...) use ARM-based firmware.
 Our loader for Binary Ninja enables you to decompile various binary firmware files.
