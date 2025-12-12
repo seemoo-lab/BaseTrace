@@ -1,11 +1,16 @@
 # Sinope Binja Loader (Rust)
 
-A [Binary Ninja](https://binary.ninja) loader for fwsg binaries (rkos, cdpu, cdpd, l1cs, cdph, CR.., R...) part of the Apple's C1 / C4000 / Sinope baseband firmware.
-The current version of the loader supports the native Rust interface of Binary Ninja v5.1.  
+A [Binary Ninja](https://binary.ninja) loader for fwsg binaries (rkos, cdpu, cdpd, l1cs, cdph, CR.., R...) part of
+Apple's C1 / C4000 / Sinope baseband firmware.
+
+The current version of the loader supports the native Rust interface of **Binary Ninja v5.2**.
+If you want to use the loader with older or newer versions of Binary Ninja, you have to adjust the `branch` property of
+the crates `binaryninja` and `binaryninjacore-sys` defined in `Cargo.toml` and recompile the loader.
 
 ## Downloading & Extracting Firmware
 
-Make sure to install blacktop's command-line utility [ipsw](https://github.com/blacktop/ipsw?tab=readme-ov-file#installation). 
+Make sure to install blacktop's command-line
+utility [ipsw](https://github.com/blacktop/ipsw?tab=readme-ov-file#installation).
 
 ```shell
 # Download ftab.bin of latest iOS version for iPhone16 e (iPhone17,5)
@@ -36,6 +41,7 @@ ln -sf $PWD/target/debug/libc1_binja_loader.dylib ~/Library/Application\ Support
 ## References
 
 Binary Ninja's Rust API:
+
 - https://dev-rust.binary.ninja/binaryninja/index.html
 - https://github.com/Vector35/binaryninja-api/tree/dev/rust/examples
 - https://github.com/topics/binary-ninja?l=rust
@@ -44,6 +50,7 @@ Binary Ninja's Rust API:
 - https://docs.rs/deku/latest/deku/
 
 C4000 Firmware:
+
 - https://theapplewiki.com/wiki/C4000
 - https://github.com/nlitsme/AppleC4000
 - https://gist.github.com/pwnlambda/06092d5f416dbc0a82e204b8bbc4b72c
