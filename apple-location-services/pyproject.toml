@@ -1,0 +1,15 @@
+[project]
+name = "apple-location-services"
+version = "0.1.0"
+description = "Library to query Apple Location Services"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "protobuf",
+    "pandas",
+    "numpy",
+    "tqdm",
+    "geopy",
+    "matplotlib",
+    "simplekml",
+]

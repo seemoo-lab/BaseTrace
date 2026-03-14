@@ -6,19 +6,19 @@ A library and a command line client for querying cells stored in Apple's Locatio
 
 You can query for nearby cells using the command line client:
 ```bash
-# Install pipenv
-pip3 install pipenv
+# Install uv
+# https://docs.astral.sh/uv/getting-started/installation/
 
 # Create virtual environment and sync all dependencies
-pipenv sync
+uv sync
 
 # ./als_cli.py [-h] {gsm,scdma,umts,lte,nr,cdma} country network area cell
 # Search for nearby UMTS / LTE cell towers of a cell tower in Germany (262) 
 # from Vodafone (2) in area 46452 with the cell tower id 15669002.
-pipenv run python3 als_cli.py lte 262 2 46452 15669002
+uv run als_cli.py lte 262 2 46452 15669002
 # Search for nearby GSM cell towers of a cell tower in Germany (262) 
 # from Vodafone (2) in area 566 with the cell tower id 4461.
-pipenv run python3 als_cli.py gsm 262 2 566 4461
+uv run als_cli.py gsm 262 2 566 4461
 ```
 
 ## Library
@@ -38,9 +38,9 @@ If you want to edit the Protocol Buffer file, you'll also need [Google's Protobu
 - Mac: `brew install protoc`
 - Windows: `scoop install protobuf`
 
-Once, you've installed everything, you can run the proto script to update the generated Python files.
+Once you've installed everything, you can run the proto script to update the generated Python files.
 ```bash
-pipenv run proto
+protoc -I . --python_out=lib/proto --pyi_out=lib/proto apple-location-services.proto
 ```
 
 Good resources on Protocol Buffers:
