@@ -30,10 +30,11 @@ message Location {
   optional int32 altitude = 5;
   // Unit: meters, only set for Wifi APs
   optional int32 verticalAccuracy = 6;
-  // Unit: meters
-  optional uint32 reach = 0xb;
+  optional int32 confidence = 7;
   // Assumption: How often the wifi / cell was seen by Apple devices?
-  optional int32 score = 0xc;
+  optional int32 score = 0xb;
+  // Unit: meters
+  optional uint32 reach = 0xc;
   // The field is never set and its function is unknown
   optional uint32 infoMask = 0xd;
 }
@@ -257,14 +258,14 @@ message ALSLocationResponse {
   repeated WirelessAP wirelessAPs = 2;
 
   // List of nearby CDMA & CDMA-EVDO cells with location data
-  repeated CdmaCell cdmaCells = 21;
+  repeated CdmaCell cdmaCells = 0x15;
 
   // List of nearby LTE / UMTS cells with location data
-  repeated LteCell lteCells = 22;
+  repeated LteCell lteCells = 0x16;
 
   // List of nearby SCDMA cells with location data
-  repeated ScdmaCell scdmaCells = 23;
+  repeated ScdmaCell scdmaCells = 0x17;
 
   // List of nearby Nr5G cells with location data
-  repeated Nr5GCell nr5GCells = 24;
+  repeated Nr5GCell nr5GCells = 0x18;
 }

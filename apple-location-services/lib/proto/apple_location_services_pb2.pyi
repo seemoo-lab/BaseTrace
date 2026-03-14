@@ -30,15 +30,16 @@ class Meta(_message.Message):
     def __init__(self, softwareBuild: _Optional[str] = ..., productId: _Optional[str] = ...) -> None: ...
 
 class Location(_message.Message):
-    __slots__ = ("latitude", "longitude", "accuracy", "locationType", "altitude", "verticalAccuracy", "reach", "score", "infoMask")
+    __slots__ = ("latitude", "longitude", "accuracy", "locationType", "altitude", "verticalAccuracy", "confidence", "score", "reach", "infoMask")
     LATITUDE_FIELD_NUMBER: _ClassVar[int]
     LONGITUDE_FIELD_NUMBER: _ClassVar[int]
     ACCURACY_FIELD_NUMBER: _ClassVar[int]
     LOCATIONTYPE_FIELD_NUMBER: _ClassVar[int]
     ALTITUDE_FIELD_NUMBER: _ClassVar[int]
     VERTICALACCURACY_FIELD_NUMBER: _ClassVar[int]
-    REACH_FIELD_NUMBER: _ClassVar[int]
+    CONFIDENCE_FIELD_NUMBER: _ClassVar[int]
     SCORE_FIELD_NUMBER: _ClassVar[int]
+    REACH_FIELD_NUMBER: _ClassVar[int]
     INFOMASK_FIELD_NUMBER: _ClassVar[int]
     latitude: int
     longitude: int
@@ -46,10 +47,11 @@ class Location(_message.Message):
     locationType: int
     altitude: int
     verticalAccuracy: int
-    reach: int
+    confidence: int
     score: int
+    reach: int
     infoMask: int
-    def __init__(self, latitude: _Optional[int] = ..., longitude: _Optional[int] = ..., accuracy: _Optional[int] = ..., locationType: _Optional[int] = ..., altitude: _Optional[int] = ..., verticalAccuracy: _Optional[int] = ..., reach: _Optional[int] = ..., score: _Optional[int] = ..., infoMask: _Optional[int] = ...) -> None: ...
+    def __init__(self, latitude: _Optional[int] = ..., longitude: _Optional[int] = ..., accuracy: _Optional[int] = ..., locationType: _Optional[int] = ..., altitude: _Optional[int] = ..., verticalAccuracy: _Optional[int] = ..., confidence: _Optional[int] = ..., score: _Optional[int] = ..., reach: _Optional[int] = ..., infoMask: _Optional[int] = ...) -> None: ...
 
 class WirelessAP(_message.Message):
     __slots__ = ("macID", "location", "channel", "numZAxisHarvestTraces")
