@@ -140,7 +140,10 @@ class ALSCell:
         location = ALSLocation.from_proto(proto_cell.location)
         if isinstance(proto_cell, als_proto.GsmCell):
             return ALSCell(
-                technology=ALSTechnology.GSM if not proto_cell.psc else ALSTechnology.UMTS,
+                # Approach from Florian: Assuming the RNC ID of a UMTS cell is not zero,
+                # if the cell ID is larger than 0xFFFF, then it is a UMTS and else a GSM cell.
+                # https://github.com/cdr-chakotay/ALS_Kt/blob/main/src/main/kotlin/org/kufl/als_kt/ALSQueryModels.kt#L160
+                technology=ALSTechnology.UMTS if proto_cell.cellID > 0xFFFF else ALSTechnology.GSM,
                 country=proto_cell.mcc,
                 network=proto_cell.mnc,
                 area=proto_cell.lacID,
